@@ -1,0 +1,6 @@
+.news-game__box {
+  display: grid;
+  justify-content: space-between;
+  gap: 50px;
+  grid-template-columns: 2fr 1fr;
+}/*# sourceMappingURL=news.css.map */

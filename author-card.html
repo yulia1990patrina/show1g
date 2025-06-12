@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <nav class="header__menu">
+                    <a href="#" class="header__logo">
+                        <img class="header__logo-img" src="icons/header/header-logo.svg" alt="">
+                        <img class="header__logo-sm" src="icons/header/logo-cm.svg" alt="">
+                    </a>
+                    <button class="menu__btn">
+                        <div class="menu__btn-line"></div>
+                        <div class="menu__btn-line"></div>
+                        <div class="menu__btn-line"></div>
+                    </button>
+                    <ul class="header__menu-list">
+                            <li class="header__item">
+                                <a href="#" class="menu__link">
+                                    новости
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="menu__link">
+                                    обзоры
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="menu__link">
+                                    гайды
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="menu__link">
+                                    прохождения
+                                </a>
+                            </li>
+                            <li class="header__item-club">
+                                <a href="#" class="menu__link">
+                                    клуб романтики
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="menu__link">
+                                    игры
+                                </a>
+                            </li>
+                    </ul>
+                    <form class="header__search">
+                        <input class="header__input" type="text">
+                        <img src="icons/search.svg" alt="">
+                    </form>
+                    <div class="header__language">
+                        <div class="header__language1">
+                            <button class="header__btn">eng</button>
+                            <button class="header__btn header__btn--active">ru</button>
+                        </div>
+                        <div class="header__language2">
+                            <button class="header__btn">
+                                <img src="icons/person.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="header-bottom">
+            <ul class="header-bottom__categories">
+                <li class="header-bottom__item">
+                    <img src="icons/lightning.svg" alt="">
+                    <a href="#" class="header-bottom__link">ark Souls </a>
+                </li>
+                <li class="header-bottom__item">
+                    <img src="icons/lightning.svg" alt="">
+                    <a href="#" class="header-bottom__link">Bloodborne</a>
+                </li>
+                <li class="header-bottom__item">
+                    <img src="icons/lightning.svg" alt="">
+                    <a href="#" class="header-bottom__link">Hollow Knight </a>
+                </li>
+                <li class="header-bottom__item">
+                    <img src="icons/lightning.svg" alt="">
+                    <a href="#" class="header-bottom__link">Elden Ring</a>
+                </li>
+                <li class="header-bottom__item">
+                    <img src="icons/lightning.svg" alt="">
+                    <a href="#" class="header-bottom__link">Sekiro</a>
+                </li>
+            </ul>
+    </section>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrapper">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <span href="#">Новости</span>
+                    </li>
+                </ul>
+                <div class="breadcrumbs__line"></div>
+            </div>
+        </div>
+    </div>
+    <section class="author-card">
+        <div class="container">
+            <div class="author-card__inner">
+                <div class="author-card__all">
+                    <div class="account__title">
+                        <img src="icons/account/author-card.svg" alt="">
+                        <h2 class="title-h2">Карточка Автора</h2>
+                    </div>
+                </div>
+                <div class="tabs-wrapper">
+                    <div class="author-card__top">
+                        <div class="author-card__author">
+                            <div class="author-card__author-img">
+                                <img src="icons/person-big.svg" alt="">
+                                <div class="author-card__author-text">
+                                    <p class="title-h5">Илья <br>Скорич</p>
+                                    <p class="author-card__author-p">АВТОР</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs author-card__tabs">
+                            <a class="tab author-card__tab" href="#">Отзывы</a>
+                            <a class="tab author-card__tab tab--active" href="#">Публикации</a>
+                            <a class="tab author-card__tab" href="#">Комментарии</a>
+                        </div>
+                        <div class="author-card__btn">
+                            <button class="footer-top__contact-btn">ПОДПИСАТЬСЯ</button>
+                        </div>
+                        <div class="author-card__about">
+                            <p>
+                                Муж, отец, геймер, любитель сериалов. Раньше использовал ник - kacnep. Пишу на Shazoo с осени 2014 года. Запустил подкаст "Батины пиксели"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tabs-container">
+                        <div class="tabs-content"></div>
+                        <div class="tabs-content tabs-content--active">
+                            <div class="line-middle-2"></div>
+                            <div class="news-game__gaming author-card__gaming padding-top">
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/rockstar.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                    <h4 class="title-h4">Rockstar Games закрыла мод, переносивший Либерти-Сити из GTA IV в GTA V</h4>
+                                    <div class="news-game__article-box">
+                                        <p class="news-game__article-data">16.01.2025</p>
+                                        <p class="news-game__article-consoles">PS, PC, Xbox</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/wartarn.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                <h4 class="title-h4">Wartorn — тактический рогалик от создателей Borderlands и BioShock</h4>
+                                <div class="news-game__article-box">
+                                    <p class="news-game__article-data">16.01.2025</p>
+                                    <p class="news-game__article-consoles">PS5, PC, Xbox Series S/X, XBOX ONE</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/gaijin.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                    <h4 class="title-h4">Gaijin Entertainment издаст космическую песочницу Cubic Odyssey</h4>
+                                    <div class="news-game__article-box">
+                                        <p class="news-game__article-data">16.01.2025</p>
+                                        <p class="news-game__article-consoles">PC</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/rockstar.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                    <h4 class="title-h4">Rockstar Games закрыла мод, переносивший Либерти-Сити из GTA IV в GTA V</h4>
+                                    <div class="news-game__article-box">
+                                        <p class="news-game__article-data">16.01.2025</p>
+                                        <p class="news-game__article-consoles">PS, PC, Xbox</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/wartarn.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                <h4 class="title-h4">Wartorn — тактический рогалик от создателей Borderlands и BioShock</h4>
+                                <div class="news-game__article-box">
+                                    <p class="news-game__article-data">16.01.2025</p>
+                                    <p class="news-game__article-consoles">PS5, PC, Xbox Series S/X, XBOX ONE</p>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="news-game__article">
+                                <div class="news-game__article-img">
+                                    <img src="img/news-gaming/gaijin.jpg" alt="">
+                                </div>
+                                <div class="news-game__article-text">
+                                    <h4 class="title-h4">Gaijin Entertainment издаст космическую песочницу Cubic Odyssey</h4>
+                                    <div class="news-game__article-box">
+                                        <p class="news-game__article-data">16.01.2025</p>
+                                        <p class="news-game__article-consoles">PC</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wide-line"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__logo">
+                    <a class="footer-top__logo-link" href="#">
+                        <img src="icons/footer/footer-logo.svg" alt="">
+                        <p>Прохождения, новости, гайды и обзоры видеоигр</p>
+                    </a>
+                </div>
+                <div class="footer-top__social">
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/twitter.png" alt="twitter"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/youtube.png" alt="youtube"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/facebook.png" alt="facebook"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/vc.png" alt="vc"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/vk.png" alt="vk"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/spark.png" alt="spark"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/medium.png" alt="medium"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/pinterest.png" alt="pinterest"></a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#"><img src="img/footer/tg.png" alt="tg"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__contact">
+                    <button class="footer-top__contact-btn">Связаться с Нами</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__box">
+                    <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">НОВОСТИ </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ОБЗОРЫ   </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ГАЙДЫ</a>
+                    </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">КЛУБ РОМАНТИКИ</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ПРОХОЖДЕНИЯ</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ИГРЫ</a>
+                    </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">РЕКЛАМА НА САЙТЕ</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ОНЛАЙН КАЗИНО</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ЧИТЫ</a>
+                    </li>
+                    </ul>
+                    <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">РЕКЛАМА НА САЙТЕ</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom__text">
+                    Все материалы на сайте showgamer.com защищены авторским правом. Разрешается частичное копирование с открытой (для поисковиков) ссылкой. ShowGamer (2015)</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
