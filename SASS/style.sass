@@ -1,4 +1,5 @@
 @import "utilities.sass"
+@import "romance.sass"
 html
     box-sizing: border-box
 
@@ -457,8 +458,6 @@ body
             justify-content: center
         .releases__tab
             width: 200px
-        .releases__data
-            width: 900px
     @media (min-width: 340px) and (max-width: 760px)
         .releases__tab
             width: 140px
@@ -644,12 +643,12 @@ body
         gap: 35px
         max-width: 265px
         color: #878787
-        line-height: 24px
     &__social
         grid-row: 1 / -1
     &__list
         display: flex
         align-items: center
+        justify-content: center
         gap: 45px
     &__contact
         grid-row: 1 / -1
@@ -662,7 +661,7 @@ body
         padding: 12px 15px
         background-color: #FF624A
         min-width: 222px
-@media (min-width: 320px) and (max-width: 1460px)
+@media (min-width: 640px) and (max-width: 1460px)
     .footer-top
         grid-template-rows: 1fr 1fr
         grid-template-columns: repeat(3fr, min-content)
@@ -672,14 +671,28 @@ body
         &__social
             grid-row: 2 / 3
             grid-column: 1 / 4
-        &__list
-            justify-content: center
         &__contact
             grid-row: 1 / 2
             grid-column: 3 / 4
 @media (min-width: 320px) and (max-width: 820px)
     .footer-top__list
-        gap: 25px
+        gap: 15px
+        flex-wrap: wrap
+@media (min-width: 320px) and (max-width: 640px)
+    .footer-top
+        grid-gap: 30px
+    .footer-top__logo
+        grid-column: 1 / -1
+        display: flex
+        justify-content: center
+    .footer-top__social
+        grid-row: 3 / 4
+        grid-column: 1 / 4
+    .footer-top__contact
+        grid-row: 2 / 3
+        grid-column: 1 / -1
+        display: flex
+        justify-content: center
 
 
 .footer-bottom
@@ -712,9 +725,15 @@ body
         font-size: 12px
         padding-bottom: 10px
 
-@media (min-width: 320px) and (max-width: 1080px)
+@media (min-width: 640px) and (max-width: 1080px)
     .footer-bottom__box
         gap: 50px
+@media (min-width: 320px) and (max-width: 860px)
+    .footer-bottom__box
+        grid-template-columns: repeat(2, min-content)
+@media (min-width: 320px) and (max-width: 640px)
+    .footer-bottom__box
+        gap: 20px
 
 
 
@@ -1443,4 +1462,119 @@ body
         width: 2px
         height: 50px
         background-color: #575756
+
+
+/* стр calendar */
+
+.calendar-top
+    display: flex
+    align-items: start
+    justify-content: space-between
+    padding-top: 70px
+    margin-bottom: 130px
+    &__title-box
+        display: flex
+        align-items: center
+        gap: 18px
+        margin-bottom: 20px
+        white-space: nowrap
+    &__title-text
+        color: #FF624A
+@media (min-width: 340px) and (max-width: 1300px)
+    .calendar-top
+        flex-direction: column
+        align-items: center
+        &__title
+            margin-bottom: 60px
+        &__title-text
+            text-align: center
+            font-size: 20px
+@media (min-width: 320px) and (max-width: 640px)
+    .calendar-top__title-box
+        white-space: pre-wrap
+.calendar-months
+    display: flex
+    flex-direction: column
+    gap: 50px
+    &__month
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 4.5vw
+        background-color: #ffffff
+        color: #FF624A
+        font-size: 40px
+        font-weight: 600
+        padding: 18px
+        border-radius: 20px
+    &__month > .arrow
+        background: none
+        border: none
+    &__month > span
+        white-space: nowrap
+    &__btn
+        display: flex
+        justify-content: space-between
+    &__btn-icon
+        background: transparent
+        border: none
+    &__btn-all
+        background-color: #ffffff
+        border: none
+        border-radius: 20px
+        padding: 10px 15px
+    @media (min-width: 320px) and (max-width: 640px)
+        .calendar-months__month
+            font-size: 30px
+            padding: 5px
+
+.calendar-games
+    &__box
+        margin-bottom: 150px
+    &__data
+        display: flex
+        align-items: flex-end
+        margin-bottom: 40px
+    &__data-date
+        font-size: 30px
+    &__games
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+    &__card
+        display: flex
+        width: 570px
+        height: 260px
+        border-radius: 20px
+        overflow: hidden
+    &__card > img
+        width: 50%
+        border-radius: 20px
+    &__card-text
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 100%
+        padding: 30px 20px
+        background-color: #202023
+    &__card-text1
+        display: flex
+        justify-content: space-between
+    &__card-text1 > div
+        color: #686868
+        font-weight: 200
+    &__card-text1 > p
+        color: #FF624A
+        font-weight: 600
+    @media (min-width: 1076px) and (max-width: 1315px)
+        &__card
+            width: 450px
+            height: 205px
+    @media (min-width: 320px) and (max-width: 1076px)
+        &__card
+            width: 400px
+            height: 205px
+    @media (min-width: 320px) and (max-width: 970px)
+        &__games
+            justify-content: center
 
