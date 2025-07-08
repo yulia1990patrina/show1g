@@ -1,0 +1,204 @@
+.walkthrough
+    &__tab-wrapper
+        margin-bottom: 100px
+    &__tabs
+        margin-bottom: 35px
+    &__tab
+        text-transform: uppercase
+        text-align: center
+        font-size: 20px
+        font-weight: 500
+        padding: 15px
+        border: 1px solid #ffffff
+        border-radius: 20px
+        width: 240px !important
+        overflow: hidden
+    &__tab-1
+        text-transform: uppercase
+        text-align: center
+        font-size: 15px
+        padding: 10px
+        border: 1px solid #ffffff
+        border-radius: 20px
+        width: 240px !important
+        overflow: hidden
+    &__wraper
+        display: grid
+        grid-template-columns: 1fr 3fr
+        gap: 90px
+    &__title
+        margin-bottom: 45px
+    &__content > .news-article__data-author
+        padding: 15px 50px
+        border: 1px solid #ffffff
+        border-radius: 20px
+    &__author
+        display: flex
+        border: 1px solid #ffffff
+        border-radius: 20px
+    &__text
+        font-size: 15px
+        font-weight: 200
+        margin-bottom: 70px
+    &__questions-box
+        &:not(:last-child)
+            margin-bottom: 100px
+    &__questions-box1
+        &:not(:last-child)
+            margin-bottom: 40px
+    &__questions-box > p
+        font-weight: 200
+    &__questions-title
+        margin-bottom: 20px
+    &__questions-list
+        padding: 25px 30px
+        border: 1px solid #ffffff
+        border-radius: 20px
+        background: linear-gradient(to right, transparent calc(100% - 20px), #6831B3 20px)
+        margin-bottom: 20px
+    &__questions-item
+        display: flex
+        position: relative
+        padding-left: 30px
+        &:not(:last-child)
+            margin-bottom: 40px
+    &__questions-item::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background-color: #FF624A
+    &__questions-item > div
+        font-size: 15px
+        font-weight: 200
+        padding-right: 5px
+    &__questions-item > span
+        font-size: 15px
+        font-weight: 700
+
+
+.walkthrough__tab.tab--active
+    background-color: #6831B3
+    border: none
+.walkthrough__tab-1.tab--active
+    background-color: #6831B3
+    border: none
+.tabs-content.tabs-content--active 
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 20px
+.tabs-content
+    display: none
+
+.slick-track
+    gap: 20px
+.romance-gallery
+    margin-bottom: 120px
+
+.read-more
+    margin-bottom: 30px
+    &__item
+        font-size: 15px
+        font-weight: 700
+        padding: 30px 0
+        border-bottom: 1px solid #ffffff
+
+.sidebar 
+    background: transparent
+    color: white
+    padding: 20px
+    border: 1px solid #575756
+    border-radius: 20px
+    position: relative
+    margin-bottom: 80px
+
+.sidebar > .line-middle-2
+    position: absolute
+    left: 0
+.sidebar__title 
+    font-size: 25px
+    margin-bottom: 15px
+    text-align: center
+    white-space: nowrap
+
+.sidebar__search
+    display: flex
+    border: 2px solid #ff5e44
+    border-radius: 20px
+    overflow: hidden
+    margin-bottom: 20px
+    position: relative
+    margin-top: 30px
+
+
+.sidebar__search input
+    flex: 1
+    padding: 8px 12px
+    border: none
+    background: transparent
+    color: #FF624A
+    outline: none
+    caret-color: #FF624A
+
+.sidebar__search input::placeholder
+    color: #FF624A
+
+.sidebar__search button 
+    background: none
+    border: none
+    cursor: pointer
+    position: absolute
+    right: 12px
+    bottom: 0
+
+.sidebar__nav ul 
+    list-style: none
+    padding: 0
+    margin: 0
+
+
+.sidebar__nav li 
+    margin-bottom: 20px
+
+.sidebar__nav a,
+.toggle-submenu 
+    display: flex
+    align-items: center
+    width: 100%
+    background: none
+    border: none
+    color: white
+    text-decoration: none
+    font-size: 20px
+    font-weight: 600
+    cursor: pointer
+
+
+.submenu 
+    margin-top: 5px
+    padding-left: 10px
+    display: none
+
+.submenu > li > a
+    padding-left: 35px
+    font-size: 15px
+    font-weight: 200
+
+.has-submenu.open .submenu 
+    display: block
+
+
+.arrow 
+    font-size: 12px
+    margin-left: 10px
+
+
+.has-submenu.open .arrow 
+    transform: rotate(90deg)
+
+@media (min-width: 320px) and (max-width: 1480px)

@@ -1,5 +1,6 @@
 @import "utilities.sass"
 @import "romance.sass"
+@import "romance-guide.sass"
 html
     box-sizing: border-box
 
@@ -41,12 +42,27 @@ body
     overflow-x: hidden
     min-width: 320px
 .container
-    max-width: 1836px
+    max-width: 1810px
     margin: 0 auto
     padding: 0 15px
-    @media (min-width: 320px) and (max-width: 1480px)
-        padding: 0 70px
 
+
+.width
+    max-width: 453px
+    height: 390px
+    @media (min-width: 1081px) and (max-width: 1760px)
+        width: auto
+    @media (min-width: 320px) and (max-width: 1080px)
+        width: 350px
+        height: auto
+    @media (min-width: 320px) and (max-width: 839px)
+        width: 100%
+.width-2
+    width: 330px
+    @media (min-width: 1081px) and (max-width: 1760px)
+        width: auto
+    @media (min-width: 320px) and (max-width: 839px)
+        width: 100%
 
 .header
     background-color: #2E2E30
@@ -105,9 +121,10 @@ body
             margin-left: 30px
         .header__language
             margin-left: 30px
-    @media (min-width: 320px) and (max-width: 1490px)
+    @media (min-width: 320px) and (max-width: 1200px)
         .header__menu
             justify-content: space-evenly
+            padding: 22px 0 24px
         .header__menu-list
             display: none
         .menu__btn
@@ -124,24 +141,31 @@ body
         .header__search
             max-width: 457px
             height: 52px
-    @media (min-width: 320px) and (max-width: 1084px)
-        .header__menu
-            gap: 40px
-            justify-content: space-evenly
         .header__logo-img
             display: none
         .header__logo-sm
             display: block
-    @media (min-width: 320px) and (max-width: 800px)
+            width: 52px
+    @media (min-width: 320px) and (max-width: 1084px)
         .header__menu
-            gap: 0
+            gap: 40px
+            justify-content: space-evenly
+    @media (min-width: 320px) and (max-width: 800px)
+        .header__search
+            height: auto
+        .header__menu
+            gap: 20px
             padding: 24px 0 24px
         .header__logo-sm
-            width: 50px
-            height: 50px
+            width: 40px
+            height: 40px
         .menu__btn-line
             width: 50px
             height: 4px
+    @media (min-width: 320px) and (max-width: 640px)
+        .header__search
+            display: none
+
 .menu__btn
     display: none
 
@@ -224,7 +248,6 @@ body
     &__slider-text > p
         text-align: right
         font-size: 10px
-        line-height: 15px
         color: #706F6F
     &__slider-data
         display: flex
@@ -341,29 +364,43 @@ body
 
 .height
     height: 212px
-    @media (min-width: 320px) and (max-width: 1480px)
-        height: 270px
-
+/*     @media (min-width: 320px) and (max-width: 1480px)
+        height: 270px */
+.news-game__box2
+    width: 50%
+.news-game__box1
+    width: 50%
 .news-game
     margin-bottom: 160px
     &__box
         display: flex
         justify-content: space-between
+        align-items: start
         gap: 50px
-    &__gaming
-        margin-bottom: 160px
+    &__box1
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__box2
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
     &__title
         display: flex
         align-items: center
         gap: 18px
-        margin-bottom: 55px
+        margin-bottom: 65px
     &__article
-        height: 300px
+        height: auto
         display: flex
         overflow: hidden
         border-radius: 20px
         margin-bottom: 35px
         background-color: #202023
+    &__article > img
+        width: 50%
     &__article-text
         display: flex
         flex-direction: column
@@ -372,6 +409,7 @@ body
     &__article-box
         display: flex
         justify-content: space-between
+        padding-top: 20px
     &__article-data
         color: #686868
         font-weight: 200
@@ -392,32 +430,76 @@ body
         border-radius: 10px
         width: 54px
         height: 30px
-    @media (min-width: 320px) and (max-width: 1480px)
-        .news-game__box
-            flex-direction: column
-        .news-game__gaming
-            display: flex
-            flex-direction: column
-            align-items: center
-            margin-bottom: 100px
-        .passing__box
-            gap: 30px
-            margin-bottom: 0
-            justify-content: center
-        .line-middle
-            display: none
-        .releases__title
-            justify-content: flex-start
-        .releases__content
-            justify-content: center
-            gap: 30px
-        .news-game__box2
-            display: flex
-            flex-direction: column
+@media (min-width: 1081px) and (max-width: 1760px)
+    .news-game__box
+        gap: 40px
+    .news-game__box1
+        width: 70%
+    .news-game__box2
+        width: 30%
+    .releases__title
+        justify-content: center
+    .releases__tabs
+        flex-wrap: wrap
+    .content-2
+        display: none
+    .releases__tabs
+        gap: 20px
+    .releases__tab
+        width: auto
+        font-size: 12px
+@media (min-width: 320px) and (max-width: 1080px)
+    .news-game__box
+        flex-direction: column
+        gap: 100px
+    .news-game__box2
+        width: 100%
+        gap: 100px
+    .news-game__box1
+        width: 100%
+    .news-game__gaming
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    .passing__box
+        gap: 30px
+        margin-bottom: 0
+        justify-content: center
+    .line-middle
+        display: none
+    .releases__title
+        justify-content: flex-start
+    .releases__content
+        justify-content: center
+        gap: 30px
+@media (min-width: 320px) and (max-width: 840px)
+    .news-game
+        margin-bottom: 50px
+    .releases__title
+        margin-bottom: 30px
+    .news-game__title
+        margin-bottom: 30px
+    .news-game__article
+        margin-bottom: 20px
+@media (min-width: 320px) and (max-width: 640px)
+    .news-game__article-consoles
+        font-size: 10px
+    .news-game__article-text
+        padding: 20px
+        width: 50%
+    .news-game__article-data
+        font-size: 10px
+@media (min-width: 320px) and (max-width: 540px)
+    .content-2
+        display: none
+    .news-game__content-2
+        display: none
+@media (min-width: 320px) and (max-width: 840px)
+    .news-game
+        margin-bottom: 100px
 
 
 .releases
-    margin-bottom: 160px
     &__title
         display: flex
         justify-content: flex-end
@@ -429,7 +511,8 @@ body
         align-items: center
     &__tabs
         display: flex
-        gap: 33px
+        justify-content: space-evenly
+        gap: 30px
         margin-bottom: 30px
     &__tab
         width: 160px
@@ -452,26 +535,30 @@ body
         width: 90%
     &__content
         display: flex
-        justify-content: space-evenly
-    @media (min-width: 950px) and (max-width: 1490px)
-        .releases__tabs
-            justify-content: center
-        .releases__tab
-            width: 200px
+        align-items: center
+        gap: 20px
     @media (min-width: 340px) and (max-width: 760px)
+        .releases__tabs
+            flex-wrap: wrap
+            gap: 10px
         .releases__tab
             width: 140px
-            gap: 23px
+            gap: 15px
+            font-size: 12px
+        .releases__data
+            padding: 10px
 
 .card
     margin-bottom: 25px
     position: relative
+    height: 50%
     & > h3
         font-size: 15px
         padding-bottom: 10px
     &__img
         border-radius: 30px
         overflow: hidden
+        margin-bottom: 15px
     &__img > img
         width: 100%
     &__text
@@ -482,6 +569,13 @@ body
         color: #FF624A
     &__data
         font-weight: 200
+    @media (min-width: 320px) and (max-width: 640px)
+        .card__img
+            margin-bottom: 5px
+@media (min-width: 540px) and (max-width: 840px)
+    .card
+        height: 300px
+
 .card-gradient::after
     content: ''
     background: linear-gradient(180deg, rgba(37, 37, 37, 0.4), rgba(14, 14, 15, 0.9))
@@ -494,17 +588,15 @@ body
 
 
 .passing
-    margin-bottom: 140px
     &__box
         display: flex
-        justify-content: space-between
+        justify-content: center
         gap: 30px
         margin-bottom: 90px
 
+
 .comments
     margin-bottom: 90px
-    &__box
-        margin-bottom: 90px
     &__content
         height: 205px
         padding: 20px 20px 35px
@@ -527,28 +619,37 @@ body
     &__content-text
         font-size: 13px
         font-weight: 200
-        line-height: 20px
+    @media (min-width: 1081px) and (max-width: 1760px)
+        .comments__content-box1
+            width: 100%
+    @media (min-width: 340px) and (max-width: 640px)
+        .comments
+            padding: 0 20px
+        .comments__content-box1
+            width: 100%
 
 .social-media
+    width: 100%
     border: 1px solid #706F6F
     border-radius: 20px
     display: flex
     justify-content: space-evenly
     align-items: center
     padding: 14px 0
-    margin-bottom: 100px
     &__content
         text-align: center
+    &__content > p
+        padding-top: 10px
     &__line
         width: 1px
         height: 100px
         background-color: #706F6F
 
 .romance-club
-    margin-bottom: 160px
     &__content
         display: flex
         flex-direction: column
+        margin-bottom: 160px
     &__img
         border-radius: 20px
         overflow: hidden
@@ -571,13 +672,23 @@ body
         padding: 15px 20px
     @media (min-width: 320px) and (max-width: 1084px)
         .romance-club__content
+            margin-bottom: 100px
+        .romance-club__content
             flex-direction: column-reverse
             gap: 30px
         .romance-club__link
             font-size: 30px
     @media (min-width: 320px) and (max-width: 720px)
+        .romance-club__content
+            margin-bottom: 50px
+        .romance-club__box
+            flex-direction: column
+            align-items: center
+            gap: 20px
         .romance-club__link
             font-size: 20px
+            padding: 5px 20px
+
 
 .discussed
     margin-bottom: 50px
@@ -626,6 +737,12 @@ body
     @media (min-width: 320px) and (max-width: 1080px)
         padding: 0
         background: transparent
+        .about-us__item
+            font-size: 12px
+        .about-us__important
+            font-size: 12px
+        .about-us__important-img
+            width: 40px
 
 .footer-top
     display: grid
@@ -693,6 +810,9 @@ body
         grid-column: 1 / -1
         display: flex
         justify-content: center
+    .footer-top__contact-btn
+        font-size: 15px
+        min-width: 130px
 
 
 .footer-bottom
@@ -733,7 +853,11 @@ body
         grid-template-columns: repeat(2, min-content)
 @media (min-width: 320px) and (max-width: 640px)
     .footer-bottom__box
+        display: flex
+        flex-direction: column
         gap: 20px
+    .footer-bottom__item
+        text-align: center
 
 
 
@@ -742,18 +866,24 @@ body
 .news-game__page2
     display: grid
     grid-template-columns: 3fr 1fr
+    align-items: flex-start
     gap: 130px
-    @media (min-width: 320px) and (max-width: 1480px)
+    margin-top: 100px
+    @media (min-width: 320px) and (max-width: 1080px)
         grid-template-columns: 1fr
 
-.margin-top
-    margin-top: 100px
+.news-game__page2 > .news-game__box1
+    width: 100%
+
+.news-game__box2-page2 > .social-media
+    width: 330px
+    margin-bottom: 70px
 
 .news-game__box2-page2
     display: flex
     flex-direction: column
     align-items: flex-end
-    @media (min-width: 320px) and (max-width: 1480px)
+    @media (min-width: 320px) and (max-width: 1080px)
         display: none
 
 .comments__box-page2
@@ -784,12 +914,20 @@ body
         display: grid
         grid-template-columns: 1fr 3fr
         gap: 130px
+    &__box1
+        grid-column: 2 / 4
     &__box2
         display: flex
         flex-direction: column
     &__box-page2
         display: flex
         flex-direction: column
+    &__img-author
+        position: relative
+    &__like
+        position: absolute
+        top: -60px
+        right: 0
     &__img
         border-radius: 20px
         overflow: hidden
@@ -824,9 +962,7 @@ body
         border: .5px solid #706F6F
         border-radius: 30px
         padding: 6px 24px
-    @media (min-width: 320px) and (max-width: 1480px)
-        .news-article__box2
-            display: none
+
 .releases__title-start
     margin-bottom: 65px
 
@@ -837,7 +973,6 @@ body
     font-weight: 200
     line-height: 22px
     &__content
-        width: 80%
         border: 1px solid #FF624A
         border-radius: 20px
         color: #FF624A
@@ -852,7 +987,6 @@ body
         padding-bottom: 30px
     &__start > p
         font-weight: 200
-
 
 .body-news
     padding: 80px 0
@@ -939,7 +1073,6 @@ body
     &__grade
         display: flex
         justify-content: space-between
-        gap: 154px
         padding: 25px 80px
         border-radius: 0 0 20px 20px
         background-color: #FF624A
@@ -958,7 +1091,7 @@ body
         padding-bottom: 10px
     &__grade-numbers
         display: flex
-        padding: 10px 30px 5px
+        padding: 10px 30px
         background-color: #202023
         font-size: 40px
         font-weight: 700
@@ -966,7 +1099,6 @@ body
 
 .leave-comment
     padding-top: 90px
-    border-top: .5px solid #706F6F
     margin-bottom: 215px
     &__title
         display: flex
@@ -1058,6 +1190,64 @@ body
     background-color: #2E2E30
     margin-bottom: 130px
 
+@media (min-width: 320px) and (max-width: 1280px)
+    .news-article__social-media
+        gap: 20px
+@media (min-width: 320px) and (max-width: 1080px)
+    .news-article__wraper
+        grid-template-columns: 1fr
+        display: flex
+    .news-article__box1
+        width: 100%
+    .news-article__box2
+        display: none
+    .news-article__like
+        position: absolute
+        top: -60px
+        right: 0
+    .important
+        width: 100%
+    .review__description > p
+        width: 100%
+    .review__flaws-box
+        width: 100%
+    .review__grade-box > p
+        font-size: 15px
+    .review__grade-numbers
+        font-size: 30px
+    .review__grade-numbers > .numbers-1
+        font-size: 30px
+    .review__box
+        padding: 40px 40px 0
+    .review__grade
+        padding: 25px 40px
+@media (min-width: 320px) and (max-width: 740px)
+    .news-article__data-author
+        flex-wrap: wrap
+        gap: 20px
+    .about-news
+        flex-direction: column
+        align-items: flex-start
+    .about-news__title
+        padding: 15px 20px
+    .about-news__list
+        padding: 20px
+    .about-news__item
+        padding-bottom: 10px
+    .news-game__title
+        margin-bottom: 30px
+    .body-news
+        padding: 40px 0
+    .review__flaws-box > .line-middle
+        display: none
+    .review__box
+        padding: 20px 20px 0
+    .review__grade
+        padding: 15px 20px
+    .review__grade-numbers
+        padding: 10px
+    .review__flaws-box
+        flex-wrap: wrap
 
 /* страница account */
 
@@ -1071,6 +1261,7 @@ body
         padding: 90px 0 30px
     &__title
         display: flex
+        align-items: center
         gap: 18px
     &__social > p
         color: #706F6F
@@ -1079,9 +1270,17 @@ body
         display: flex
         gap: 30px
     &__social-box1
+        text-align: center
         border: 1px solid #706F6F
         border-radius: 20px
-        padding: 50px 200px
+        padding: 50px
+        width: 50%
+        max-width: 460px
+    @media (min-width: 320px) and (max-width: 580px)
+        .account__box1
+            gap: 20px
+        .account__social-box1
+            padding: 20px
 .form
     display: grid
     gap: 30px
@@ -1105,6 +1304,7 @@ body
         border-radius: 20px
         padding: 10px
         min-width: 410px
+        color: #ffffff
     &__input-box
         display: flex
         flex-direction: column
@@ -1120,6 +1320,17 @@ body
         border: 1px solid #706F6F
         border-radius: 20px
         padding: 8px 10px
+@media (min-width: 320px) and (max-width: 580px)
+    .account__box1
+        padding: 30px 0
+    .form__box1, .form__box2
+        flex-direction: column
+        align-items: flex-start
+        gap: 20px
+    .form__input
+        min-width: 100%
+    .form__input-box
+        width: 100%
 
 /* страница author-card */
 
@@ -1172,29 +1383,75 @@ body
         align-items: flex-end
     &__gaming > .news-game__article
         width: 80%
-    @media (min-width: 320px) and (max-width: 1560px)
-        &__author
-            grid-row: 1 / 2
-            grid-column: 1 / 2
-        &__about
-            grid-row: 2 / 3
-            grid-column: 2 / 4
-            width: 100%
-            padding-left: 0
-        &__btn
-            grid-row: 1 / 2
-            grid-column: 3 / 4
-        &__tabs
-            grid-row: 3 / 4
-            grid-column: 1 / 4
-            padding-top: 60px
-        &__author-img > img
-            width: 144px
-            height: 144px
-        &__author-p
-            padding-top: 25px
-        &__gaming > .news-game__article
-            width: 100%
+@media (min-width: 841px) and (max-width: 1560px)
+    .author-card__author
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+    .author-card__about
+        grid-row: 2 / 3
+        grid-column: 2 / 4
+        width: 100%
+        padding-left: 0
+    .author-card__btn
+        grid-row: 1 / 2
+        grid-column: 3 / 4
+    .author-card__tabs
+        grid-row: 3 / 4
+        grid-column: 1 / 4
+        padding-top: 60px
+    .author-card__author-img > img
+        width: 144px
+        height: 144px
+    .author-card__author-p
+        padding-top: 25px
+    .author-card__gaming 
+        align-items: flex-start
+    .author-card__gaming > .news-game__article
+        width: 100%
+@media (min-width: 320px) and (max-width: 840px)
+    .author-card__all > .account__title
+        margin-bottom: 60px
+    .author-card
+        padding-top: 20px
+    .author-card__top
+        grid-template-columns: 1fr
+    .author-card__author
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+    .author-card__about
+        grid-row: 2 / 3
+        grid-column: 1 / 2
+        width: 100%
+        padding-left: 0
+    .author-card__btn
+        grid-row: auto
+        grid-column: 1 / 2
+    .author-card__tabs
+        grid-row: 3 / 4
+        grid-column: 1 / 2
+        padding-top: 30px
+        flex-wrap: wrap
+        justify-content: flex-start
+        gap: 30px
+        margin-bottom: 40px
+    .author-card__tab
+        padding: 0
+    .author-card__author-p
+        padding-top: 25px
+        font-size: 15px
+    .author-card__author-img > img
+        width: 120px
+    .author-card__tab:not(:last-child)
+        border-right: none
+    .author-card__author
+        margin-bottom: 20px
+    .author-card__gaming 
+        align-items: flex-start
+    .author-card__gaming > .news-game__article
+        width: 100%
+
+
+
 
 
 /* стр game-card */
