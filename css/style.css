@@ -1561,7 +1561,6 @@ body {
   }
   .news-game__box {
     flex-direction: column;
-    gap: 100px;
   }
   .news-game__box2 {
     width: 100%;
@@ -1579,9 +1578,6 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 840px) {
-  .news-game {
-    margin-bottom: 100px;
-  }
   .news-game__article {
     margin-bottom: 20px;
   }
