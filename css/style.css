@@ -96,15 +96,10 @@
   background: #706F6F;
 }
 
-.width-90 {
-  width: 90%;
+.width-100 {
+  width: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 860px) {
-  .width-90 {
-    width: 100%;
-  }
-}
 .body-romance {
   background-color: #240E3F;
 }
@@ -1555,14 +1550,21 @@ body {
     display: none;
   }
 }
+@media (min-width: 640px) and (max-width: 1460px) {
+  .news-game {
+    margin-bottom: 60px;
+  }
+}
 @media (min-width: 320px) and (max-width: 1080px) {
+  .news-game {
+    margin-bottom: 0;
+  }
   .news-game__box {
     flex-direction: column;
     gap: 100px;
   }
   .news-game__box2 {
     width: 100%;
-    gap: 100px;
   }
   .news-game__box1 {
     width: 100%;
