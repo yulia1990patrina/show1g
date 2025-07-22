@@ -9,7 +9,6 @@ $(function(){
         e.preventDefault();
         $($(this).siblings()).removeClass('tab--active');
         $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
-
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active')
     });
@@ -17,8 +16,8 @@ $(function(){
     $('.history__slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
             responsive: [
         {
             breakpoint: 1024,
@@ -74,8 +73,8 @@ $(function(){
     $('.characters__slider').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
         responsive: [
         {
             breakpoint: 1880,
@@ -123,8 +122,8 @@ $(function(){
     $('.romance-guide__slider').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
             responsive: [
         {
             breakpoint: 1610,
@@ -186,5 +185,37 @@ $(function(){
     btn.addEventListener('click', () => {
     btn.parentElement.classList.toggle('open');
     });
+    });
+    $('.romance-gallery__slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+            responsive: [
+        {
+            breakpoint: 1610,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 1080,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
     });
 });

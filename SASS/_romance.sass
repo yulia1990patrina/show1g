@@ -2,52 +2,7 @@
     background-color: #240E3F
 .header-rom
     background-color: #6831B3
-    @media (min-width: 320px) and (max-width: 1720px)
-        .header__menu-list
-            gap: 30px
-        .header__menu-list
-            margin-left: 40px
-        .header__search
-            margin-left: 30px
-        .header__language
-            margin-left: 30px
-    @media (min-width: 320px) and (max-width: 1490px)
-        .header__menu
-            justify-content: space-evenly
-        .header__menu-list
-            display: none
-        .menu__btn
-            display: block
-            background-color: transparent
-            cursor: pointer
-            border: none
-        .menu__btn-line
-            background: #ffffff
-            border-radius: 3px
-            height: 8px
-            width: 75px
-            margin: 8px 0
-        .header__search
-            max-width: 457px
-            height: 52px
-    @media (min-width: 320px) and (max-width: 1084px)
-        .header__menu
-            gap: 40px
-            justify-content: space-evenly
-        .header__logo-img
-            display: none
-        .header__logo-sm
-            display: block
-    @media (min-width: 320px) and (max-width: 800px)
-        .header__menu
-            gap: 0
-            padding: 24px 0 24px
-        .header__logo-sm
-            width: 50px
-            height: 50px
-        .menu__btn-line
-            width: 50px
-            height: 4px
+
 .romance-content
     margin-bottom: 120px
     &__title
@@ -63,16 +18,16 @@
         color: #FF624A
         font-size: 20px
         text-transform: uppercase
-    @media (min-width: 600px) and (max-width: 900px)
-        .romance-content__title
-            margin-bottom: 80px
-        .romance-content__title1
-            font-size: 50px
-    @media (min-width: 320px) and (max-width: 600px)
-        .romance-content__title
-            margin-bottom: 40px
-        .romance-content__title1
-            font-size: 30px
+@media (min-width: 600px) and (max-width: 900px)
+    .romance-content__title
+        margin-bottom: 80px
+    .romance-content__title1
+        font-size: 50px
+@media (min-width: 320px) and (max-width: 600px)
+    .romance-content__title
+        margin-bottom: 40px
+    .romance-content__title1
+        font-size: 30px
 
 .romance-box
     display: flex
@@ -133,6 +88,12 @@
         overflow: hidden
     &__slider
         position: relative
+@media (min-width: 320px) and (max-width: 890px)
+    .history
+        margin-bottom: 100px
+    .all-history
+        margin-bottom: 100px
+
 .card
     position: relative
     width: 575px
@@ -190,6 +151,7 @@
     z-index: 5
     cursor: pointer
 
+
 .fade-right,
 .fade-left
     position: absolute
@@ -234,9 +196,25 @@
         gap: 40px
     &__content > .card
         width: 420px
-    @media (min-width: 320px) and (max-width: 1090px)
-        .all-history__tab
-            padding: 12px
+    & > .slick-dots li
+        padding: 0
+        font-size: 0
+        margin: 0
+        width: 11px
+        height: 11px
+        border: 1px solid #fff
+        border-radius: 50%
+        background-color: transparent
+@media (min-width: 320px) and (max-width: 1090px)
+    .all-history__tab
+        padding: 12px
+@media (min-width: 320px) and (max-width: 890px)
+    .all-history
+        margin-bottom: 100px
+    .all-history__title
+        justify-content: flex-start
+
+
 .slick-slide
     width: 240px
 .products__container
@@ -244,14 +222,12 @@
 .tabs-content
     display: none
 .tabs-content.tabs-content--active
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    gap: 20px
+    display: grid
+    grid-template-columns: repeat(4, min-content)
 
 .card-history
     position: relative
-    width: 420px
+    width: 22%
     overflow: hidden
     border-radius: 20px
     & > img
@@ -289,6 +265,15 @@
         font-size: 8px
         color: #686868
         text-align: right
+@media (min-width: 320px) and (max-width: 1280px)
+    .card-history
+        width: 30%
+@media (min-width: 320px) and (max-width: 820px)
+    .card-history
+        width: 48%
+@media (min-width: 320px) and (max-width: 580px)
+    .card-history
+        width: auto
 
 .latest-news
     margin-bottom: 190px
@@ -297,6 +282,9 @@
         flex-wrap: wrap
         justify-content: space-between
         gap: 30px
+@media (min-width: 320px) and (max-width: 890px)
+    .latest-news
+        margin-bottom: 100px
 
 .characters
 
@@ -358,22 +346,24 @@
         flex-direction: column
     &__box1-img
         width: 100%
-    @media (min-width: 881px) and (max-width: 1490px)
-        .spoilers__box
-            flex-direction: column
-            gap: 160px
-        .spoilers__box1
-            width: 100%
-        .spoilers__box-title
-            margin-bottom: 50px
-    @media (min-width: 320px) and (max-width: 880px)
-        .spoilers__box
-            flex-direction: column
-            gap: 100px
-        .spoilers__box1
-            width: 100%
-        .spoilers__box-title
-            margin-bottom: 40px
+@media (min-width: 881px) and (max-width: 1490px)
+    .spoilers__box
+        flex-direction: column
+        gap: 160px
+    .spoilers__box1
+        width: 100%
+    .spoilers__box-title
+        margin-bottom: 50px
+@media (min-width: 320px) and (max-width: 880px)
+    .spoilers
+        margin-bottom: 100px
+    .spoilers__box
+        flex-direction: column
+        gap: 100px
+    .spoilers__box1
+        width: 100%
+    .spoilers__box-title
+        margin-bottom: 40px
 
 
 
@@ -410,9 +400,9 @@
         transition: max-height 0.3s ease
     &__arrow
         transform: all .3s
-    @media (min-width: 320px) and (max-width: 890px)
-        .faq__question
-            padding: 10px 20px
+@media (min-width: 320px) and (max-width: 890px)
+    .faq__question
+        padding: 10px 20px
 .faq__item.active .faq__answer
     max-height: 500px
     padding: 30px 100px 30px 60px

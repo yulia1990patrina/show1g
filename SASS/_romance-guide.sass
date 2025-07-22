@@ -1,3 +1,5 @@
+.body-romance > .about-us
+    background: transparent
 .walkthrough
     &__tab-wrapper
         margin-bottom: 100px
@@ -12,6 +14,7 @@
         border: 1px solid #ffffff
         border-radius: 20px
         width: 240px !important
+        white-space: nowrap
         overflow: hidden
     &__tab-1
         text-transform: uppercase
@@ -21,17 +24,23 @@
         border: 1px solid #ffffff
         border-radius: 20px
         width: 240px !important
+        white-space: nowrap
         overflow: hidden
     &__wraper
-        display: grid
-        grid-template-columns: 1fr 3fr
+        display: flex
         gap: 90px
+    &__wraper > .news-article__box2
+        width: 30%
     &__title
         margin-bottom: 45px
     &__content > .news-article__data-author
         padding: 15px 50px
         border: 1px solid #ffffff
         border-radius: 20px
+        flex-wrap: wrap
+    &__content > .news-article__data-author > .news-article__like
+        position: relative
+        top: 0
     &__author
         display: flex
         border: 1px solid #ffffff
@@ -80,7 +89,11 @@
         font-size: 15px
         font-weight: 700
 
-
+.walkthrough__content
+    flex: 1 1 100%
+    min-width: 0
+    max-width: 100%
+    box-sizing: border-box
 .walkthrough__tab.tab--active
     background-color: #6831B3
     border: none
@@ -94,11 +107,17 @@
     gap: 20px
 .tabs-content
     display: none
-
+.romance-slider__slider-btnprev
+    left: 0
+.romance-slider__slider-btnnext
+    right: 0
 .slick-track
     gap: 20px
 .romance-gallery
     margin-bottom: 120px
+
+.slick-slide.slick-cloned
+    width: 280px
 
 .read-more
     margin-bottom: 30px
@@ -192,7 +211,6 @@
 .has-submenu.open .submenu 
     display: block
 
-
 .arrow 
     font-size: 12px
     margin-left: 10px
@@ -201,4 +219,48 @@
 .has-submenu.open .arrow 
     transform: rotate(90deg)
 
-@media (min-width: 320px) and (max-width: 1480px)
+@media (min-width: 320px) and (max-width: 1400px)
+    .sidebar__title
+        font-size: 20px
+@media (min-width: 320px) and (max-width: 1080px)
+    .walkthrough__wraper
+        flex-direction: column-reverse
+        gap: 10px
+    .walkthrough__wraper > .news-article__box2
+        width: 100%
+        display: block
+    .sidebar
+        display: none
+
+@media (min-width: 320px) and (max-width: 460px)
+    .walkthrough__tab
+        font-size: 12px
+        padding: 10px
+    .walkthrough__tab-1
+        font-size: 12px
+        padding: 10px
+    .walkthrough__questions-list
+        padding: 15px
+    .walkthrough__questions-item:not(:last-child)
+        margin-bottom: 20px
+    .walkthrough__content > .news-article__data-author
+        padding: 20px
+    .walkthrough__questions-item
+        padding-left: 20px
+    .walkthrough__questions-item::before
+        width: 5px
+        height: 5px
+    .walkthrough__questions-title
+        margin-bottom: 10px
+    .read-more__item
+        padding: 20px 0
+    .walkthrough__tab > .slick-dots button
+        padding: 0
+        font-size: 0
+        margin: 0
+        width: 11px
+        height: 11px
+        border: 1px solid #fff
+        border-radius: 50%
+        background-color: transparent
+
