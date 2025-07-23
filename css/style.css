@@ -1680,6 +1680,9 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 1080px) {
+  .releases {
+    margin-bottom: 50px;
+  }
   .releases__title {
     justify-content: flex-start;
   }
