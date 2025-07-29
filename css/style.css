@@ -116,6 +116,11 @@
   background-color: #6831B3;
 }
 
+.romance {
+  position: relative;
+  padding-top: 130px;
+}
+
 .romance-content {
   margin-bottom: 120px;
 }
@@ -368,6 +373,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 1090px) {
+  .romance {
+    padding-top: 80px;
+  }
   .all-history__tab {
     padding: 12px;
   }
@@ -635,6 +643,35 @@
 
 .body-romance > .about-us {
   background: transparent;
+}
+
+.romance-links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  left: 0;
+  z-index: 25;
+}
+.romance-links__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #6831B3;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0 60px 60px 0;
+}
+.romance-links__link:hover {
+  background-color: #ffffff;
+  color: #240E3F;
+}
+.romance-links__link-color:hover {
+  color: #6831B3;
 }
 
 .walkthrough__tab-wrapper {
@@ -1037,6 +1074,11 @@
 @media (min-width: 320px) and (max-width: 1400px) {
   .sidebar__title {
     font-size: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1280px) {
+  .romance-links {
+    display: none;
   }
 }
 @media (min-width: 320px) and (max-width: 1080px) {

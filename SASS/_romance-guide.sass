@@ -1,5 +1,29 @@
 .body-romance > .about-us
     background: transparent
+.romance-links
+    display: flex
+    flex-direction: column
+    gap: 25px
+    position: absolute
+    left: 0
+    z-index: 25
+    &__link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 20px
+        padding: 30px
+        background-color: #6831B3
+        font-size: 20px
+        font-weight: 500
+        text-align: center
+        text-transform: uppercase
+        border-radius: 0 60px 60px 0
+    &__link:hover
+        background-color: #ffffff
+        color: #240E3F
+    &__link-color:hover
+        color: #6831B3
 .walkthrough
     &__tab-wrapper
         margin-bottom: 100px
@@ -332,6 +356,9 @@
 @media (min-width: 320px) and (max-width: 1400px)
     .sidebar__title
         font-size: 20px
+@media (min-width: 320px) and (max-width: 1280px)
+    .romance-links
+        display: none
 @media (min-width: 320px) and (max-width: 1080px)
     .walkthrough__wraper
         flex-direction: column-reverse
