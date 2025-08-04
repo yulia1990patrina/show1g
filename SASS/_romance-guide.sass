@@ -24,6 +24,49 @@
         color: #240E3F
     &__link-color:hover
         color: #6831B3
+
+.card-guide
+    position: relative
+    overflow: hidden
+    border-radius: 20px
+    & > img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+    &__content
+        display: flex
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 22%
+        background: rgba(0, 0, 0, 0.7)
+        padding: 6%
+    &__title
+        width: 50%
+        font-size: 15px
+        font-weight: 600
+        white-space: nowrap
+    &__views
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        gap: 10px
+        font-size: 8px
+        font-weight: 700
+        color: #FF624A
+    &__views span > img
+        width: 10px
+    &__views-box
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+    &__views-box > p
+        font-size: 8px
+        color: #686868
+        text-align: right
 .walkthrough
     &__tab-wrapper
         margin-bottom: 100px
@@ -113,6 +156,30 @@
         font-size: 15px
         font-weight: 700
 
+.walkthrough__tabs-1 .slick-dots button
+    padding: 0
+    font-size: 0
+    margin: 0
+    width: 5px
+    height: 5px
+    border: none
+    border-radius: 50%
+    background-color: #6831B3
+
+.walkthrough__tabs .slick-dots button
+    padding: 0
+    font-size: 0
+    margin: 0
+    width: 5px
+    height: 5px
+    border: none
+    border-radius: 50%
+    background-color: #6831B3
+
+.walkthrough__tabs > .slick-dots
+    bottom: -20px
+.walkthrough__tabs-1 > .slick-dots
+    bottom: -20px
 .walkthrough__content
     flex: 1 1 100%
     min-width: 0
@@ -151,6 +218,19 @@
         padding: 30px 0
         border-bottom: 1px solid #ffffff
 
+.romance-gallery__slider
+    margin: 0 70px
+.romance-slider__gallery-btnnext
+    right: -70px
+.romance-slider__gallery-btnprev
+    left: -70px
+@media (min-width: 320px) and (max-width: 1260px)
+    .romance-gallery__slider
+        margin: 0 20px
+    .romance-slider__gallery-btnnext
+        right: -20px
+    .romance-slider__gallery-btnprev
+        left: -20px
 .sidebar 
     background: transparent
     color: white
@@ -158,7 +238,9 @@
     border: 1px solid #575756
     border-radius: 20px
     position: relative
-    margin-bottom: 80px
+
+.slick-slide img
+    width: 100%
 
 .sidebar > .line-middle-2
     position: absolute
@@ -248,12 +330,9 @@
     color: white
     border-radius: 20px
     position: relative
-.search-header-romance
-    max-width: 1080px
+.search-header--romance
     background: #240E3F
-    color: white
-    border-radius: 20px
-    position: relative
+
 .line-orange
     background-color: #FF624A
     height: 60px
@@ -365,7 +444,7 @@
         gap: 10px
     .walkthrough__wraper > .news-article__box2
         width: 100%
-        display: block
+        display: flex
     .sidebar
         display: none
 

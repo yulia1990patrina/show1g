@@ -91,7 +91,7 @@ $(function(){
         {
             breakpoint: 680,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
                 arrows: false,
                 dots: true
             }
@@ -132,9 +132,21 @@ $(function(){
             }
         },
         {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
             breakpoint: 1080,
             settings: {
                 slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 760,
+            settings: {
+                slidesToShow: 2
             }
         },
         {
@@ -189,17 +201,11 @@ $(function(){
     $('.romance-gallery__slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__gallery-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__gallery-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
             responsive: [
         {
-            breakpoint: 1610,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 1200,
+            breakpoint: 1260,
             settings: {
                 slidesToShow: 3
             }
@@ -214,6 +220,8 @@ $(function(){
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
+                arrows: false,
+                dots: true
             }
         }
     ]

@@ -41,10 +41,20 @@
   font-size: 25px;
   line-height: 24px;
 }
+@media (min-width: 320px) and (max-width: 1720px) {
+  .title-h3 {
+    font-size: 20px;
+  }
+}
 
 .title-h6 {
   font-size: 20px;
   font-weight: 600;
+}
+@media (min-width: 320px) and (max-width: 890px) {
+  .title-h6 {
+    font-size: 15px;
+  }
 }
 
 .padding-top {
@@ -246,7 +256,6 @@
   border-radius: 20px;
 }
 .card > img {
-  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -260,7 +269,7 @@
   width: 100%;
   height: 20%;
   background: rgba(0, 0, 0, 0.7);
-  padding: 40px;
+  padding: 6%;
 }
 .card__title {
   width: 50%;
@@ -388,10 +397,6 @@
     justify-content: flex-start;
   }
 }
-.slick-slide {
-  width: 240px;
-}
-
 .products__container {
   margin-bottom: 60px;
 }
@@ -463,6 +468,9 @@
   .card-history {
     width: 48%;
   }
+  .characters {
+    margin-bottom: 100px;
+  }
 }
 @media (min-width: 320px) and (max-width: 580px) {
   .card-history {
@@ -484,11 +492,24 @@
     margin-bottom: 100px;
   }
 }
+.characters {
+  margin-bottom: 190px;
+}
+
+@media (min-width: 320px) and (max-width: 1080px) {
+  .characters {
+    margin-bottom: 140px;
+  }
+}
+@media (min-width: 320px) and (max-width: 880px) {
+  .characters {
+    margin-bottom: 100px;
+  }
+}
 .characters-card {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 190px;
 }
 .characters-card > img {
   width: 100%;
@@ -507,6 +528,9 @@
   width: 100%;
   height: 20%;
   background: rgba(0, 0, 0, 0.7);
+}
+.characters-card > .slick-slide {
+  width: auto;
 }
 
 @media (min-width: 320px) and (max-width: 1450px) {
@@ -674,6 +698,58 @@
   color: #6831B3;
 }
 
+.card-guide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.card-guide > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.card-guide__content {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 22%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6%;
+}
+.card-guide__title {
+  width: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.card-guide__views {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #FF624A;
+}
+.card-guide__views span > img {
+  width: 10px;
+}
+.card-guide__views-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-guide__views-box > p {
+  font-size: 8px;
+  color: #686868;
+  text-align: right;
+}
+
 .walkthrough__tab-wrapper {
   margin-bottom: 100px;
 }
@@ -781,6 +857,36 @@
   font-weight: 700;
 }
 
+.walkthrough__tabs-1 .slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #6831B3;
+}
+
+.walkthrough__tabs .slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #6831B3;
+}
+
+.walkthrough__tabs > .slick-dots {
+  bottom: -20px;
+}
+
+.walkthrough__tabs-1 > .slick-dots {
+  bottom: -20px;
+}
+
 .walkthrough__content {
   flex: 1 1 100%;
   min-width: 0;
@@ -839,6 +945,29 @@
   border-bottom: 1px solid #ffffff;
 }
 
+.romance-gallery__slider {
+  margin: 0 70px;
+}
+
+.romance-slider__gallery-btnnext {
+  right: -70px;
+}
+
+.romance-slider__gallery-btnprev {
+  left: -70px;
+}
+
+@media (min-width: 320px) and (max-width: 1260px) {
+  .romance-gallery__slider {
+    margin: 0 20px;
+  }
+  .romance-slider__gallery-btnnext {
+    right: -20px;
+  }
+  .romance-slider__gallery-btnprev {
+    left: -20px;
+  }
+}
 .sidebar {
   background: transparent;
   color: white;
@@ -846,7 +975,10 @@
   border: 1px solid #575756;
   border-radius: 20px;
   position: relative;
-  margin-bottom: 80px;
+}
+
+.slick-slide img {
+  width: 100%;
 }
 
 .sidebar > .line-middle-2 {
@@ -955,12 +1087,8 @@
   position: relative;
 }
 
-.search-header-romance {
-  max-width: 1080px;
+.search-header--romance {
   background: #240E3F;
-  color: white;
-  border-radius: 20px;
-  position: relative;
 }
 
 .line-orange {
@@ -1088,7 +1216,7 @@
   }
   .walkthrough__wraper > .news-article__box2 {
     width: 100%;
-    display: block;
+    display: flex;
   }
   .sidebar {
     display: none;
@@ -1618,7 +1746,7 @@ body {
 }
 .fact-day__box-2title {
   position: absolute;
-  width: 70%;
+  width: 65%;
   bottom: 40px;
   left: 35px;
   z-index: 10;
@@ -1672,6 +1800,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+.news-game__content-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.news-game__content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .news-game__title {
   display: flex;
   align-items: center;
@@ -1683,7 +1821,6 @@ body {
   display: flex;
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 35px;
   background-color: #202023;
 }
 .news-game__article > img {
@@ -1737,7 +1874,7 @@ body {
     width: 30%;
   }
   .content-2 {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 640px) and (max-width: 1460px) {
@@ -1772,9 +1909,6 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 840px) {
-  .news-game__article {
-    margin-bottom: 20px;
-  }
   .news-game__title {
     margin-bottom: 30px;
   }
@@ -1793,18 +1927,16 @@ body {
 }
 @media (min-width: 320px) and (max-width: 540px) {
   .content-2 {
-    display: none;
+    display: none !important;
   }
   .news-game__content-2 {
     display: none;
   }
 }
-.content-1 {
-  width: 100%;
-}
-
 .content-2 {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .releases__title {
@@ -1856,6 +1988,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 @media (min-width: 1081px) and (max-width: 1760px) {
@@ -1905,7 +2039,6 @@ body {
   }
 }
 .card {
-  margin-bottom: 25px;
   position: relative;
   height: 50%;
   border-radius: 0;
@@ -1947,7 +2080,7 @@ body {
 }
 .card-gradient::after {
   content: "";
-  background: linear-gradient(180deg, rgba(37, 37, 37, 0.4), rgba(14, 14, 15, 0.9));
+  background: linear-gradient(180deg, rgba(37, 37, 37, 0), rgba(37, 37, 37, 0.2), rgba(14, 14, 15, 0.8));
   position: absolute;
   z-index: 5;
   left: 0;
@@ -1978,7 +2111,6 @@ body {
   padding: 20px 20px 35px;
   border: 1px solid #706F6F;
   border-radius: 20px;
-  margin-bottom: 30px;
 }
 .comments__content-box {
   display: flex;
@@ -2096,7 +2228,8 @@ body {
   }
 }
 .discussed {
-  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
 }
 .discussed__btn {
   border: none;
@@ -2398,9 +2531,10 @@ body {
 .news-article__box2 {
   display: flex;
   flex-direction: column;
+  gap: 70px;
 }
-.news-article__box2 > .social-media {
-  margin-bottom: 30px;
+.news-article__box2 .discussed .releases__content > .content-2 {
+  display: none;
 }
 .news-article__box-page2 {
   display: flex;
@@ -2454,10 +2588,23 @@ body {
   gap: 15px;
 }
 .news-article__like-btn {
+  position: relative;
   background: transparent;
   border: 0.5px solid #706F6F;
   border-radius: 30px;
   padding: 6px 24px;
+}
+.news-article__like-circle {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  padding-top: 4px;
+  background-color: #ffffff;
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
 }
 
 .about-news {
@@ -2568,10 +2715,8 @@ body {
 }
 .review__flaws-box {
   display: flex;
+  gap: 30px;
   width: 55%;
-}
-.review__flaws-box > .line-middle {
-  margin: 0 50px;
 }
 .review__flaw > h5 {
   font-size: 20px;
@@ -2778,15 +2923,18 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 1080px) {
+  .news-article__box2 .discussed .releases__content > .content-2 {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
   .news-article__wraper {
     display: flex;
     flex-direction: column-reverse;
   }
   .news-article__box1 {
     width: 100%;
-  }
-  .news-article__box2 > .social-media {
-    margin-bottom: 100px;
   }
   .news-article__like {
     position: absolute;
@@ -2833,6 +2981,11 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 740px) {
+  .news-article__like-circle {
+    width: 1.2em;
+    height: 1.2em;
+    padding: 2px;
+  }
   .news-article__like-btn {
     padding: 5px 15px 3px;
   }
@@ -3077,6 +3230,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  gap: 30px;
   margin-bottom: 60px;
 }
 .author-card__gaming > .news-game__article {
