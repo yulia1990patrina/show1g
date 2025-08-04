@@ -57,6 +57,7 @@ body
 .width-2
     width: auto
 
+
 .header
     background-color: #2E2E30
     &__logo-sm
@@ -89,6 +90,7 @@ body
         border: none
         min-width: 270px
         color: #ffffff
+        outline: none
     &__language
         display: flex
         align-items: center
@@ -276,6 +278,8 @@ body
         font-weight: 700
         padding-bottom: 30px
         color: #FF624A
+    &__slider-data > img
+        width: auto
     &__box-title::after
         content: ""
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 34%, transparent 10%)
@@ -594,10 +598,13 @@ body
     .releases__data
         padding: 10px
 
-
+.card--height
+    height: 390px
+@media (min-width: 541px) and (max-width: 860px)
+    .card--height
+        height: 50%
 .card
     position: relative
-    height: 50%
     border-radius: 0
     & > h3
         font-size: 15px
@@ -620,9 +627,6 @@ body
 @media (min-width: 320px) and (max-width: 640px)
     .card__img
         margin-bottom: 5px
-@media (min-width: 540px) and (max-width: 840px)
-    .card
-        height: auto
 
 .card-gradient::after
     content: ''
@@ -634,6 +638,15 @@ body
     bottom: 0
     top: 0
 
+.card-gradient-romance::after
+    content: ''
+    background: linear-gradient(180deg, rgba(36, 14, 63, 0),rgba(36, 14, 63, 0.3), rgba(36, 14, 63, 0.9))
+    position: absolute
+    z-index: 5
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
 
 .passing
     &__box
@@ -977,6 +990,7 @@ body
         display: grid
         grid-template-columns: 1fr 3fr
         gap: 130px
+        padding-top: 100px
     &__box1
         grid-column: 2 / 4
     &__box2
@@ -1296,6 +1310,7 @@ body
     .news-article__wraper
         display: flex
         flex-direction: column-reverse
+        padding-top: 60px
     .news-article__box1
         width: 100%
     .news-article__like

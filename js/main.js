@@ -134,19 +134,19 @@ $(function(){
         {
             breakpoint: 1280,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 4,
             }
         },
         {
             breakpoint: 1080,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
             }
         },
         {
             breakpoint: 760,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
             }
         },
         {
