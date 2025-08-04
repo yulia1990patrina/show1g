@@ -565,6 +565,8 @@
   }
   .spoilers__box1 {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .spoilers__box-title {
     margin-bottom: 50px;
@@ -1235,7 +1237,7 @@
 }
 @media (min-width: 320px) and (max-width: 760px) {
   .top-bar__title {
-    font-size: 20px;
+    font-size: 15px;
   }
   .search-box > input {
     font-size: 20px;
@@ -1879,9 +1881,6 @@ body {
 }
 
 @media (min-width: 1081px) and (max-width: 1760px) {
-  .news-game__box {
-    gap: 40px;
-  }
   .news-game__box1 {
     width: 70%;
   }
@@ -2051,15 +2050,6 @@ body {
   }
   .releases__data {
     padding: 10px;
-  }
-}
-.card--height {
-  height: 390px;
-}
-
-@media (min-width: 541px) and (max-width: 860px) {
-  .card--height {
-    height: 50%;
   }
 }
 .card {
