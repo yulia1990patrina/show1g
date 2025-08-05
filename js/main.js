@@ -20,19 +20,13 @@ $(function(){
         nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
             responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 890,
             settings: {
                 slidesToShow: 2
             }
         },
         {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 480,
+            breakpoint: 640,
             settings: {
                 slidesToShow: 1,
                 arrows: false,
@@ -41,11 +35,11 @@ $(function(){
         }
     ]
     });
-        $('.all-history__tabs').slick({
+    $('.all-history__tabs').slick({
         slidesToShow: 7,
         slidesToScroll: 1,
-        prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
-        nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
+        prevArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnprev"><img src="icons/romance/arrow-left.svg" alt=""></button>',
+        nextArrow: '<button class="product-slider__slider-btn romance-slider__slider-btnnext"><img src="icons/romance/arrow-right.svg" alt=""></button>',
         responsive: [
         {
             breakpoint: 1880,
@@ -91,7 +85,14 @@ $(function(){
         {
             breakpoint: 680,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
+                dots: true
+            }
+        },
+                {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
                 arrows: false,
                 dots: true
             }

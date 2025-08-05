@@ -657,7 +657,6 @@ body
 .comments
     margin-bottom: 90px
     &__content
-        height: 205px
         padding: 20px 20px 35px
         border: 1px solid #706F6F
         border-radius: 20px
@@ -670,23 +669,32 @@ body
     &__content-box1 > h4
         color: #FF624A
         font-weight: 700
-        line-height: 16px
     &__content-box1 > p
         font-weight: 300
         padding-bottom: 5px
     &__content-text
         font-size: 13px
         font-weight: 200
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+        line-height: 1.2em
+        max-height: 4.5em
 @media (min-width: 1081px) and (max-width: 1760px)
     .comments__content-box1
         width: 100%
 @media (min-width: 320px) and (max-width: 640px)
+    .comments__content-box1 > h4
+        font-size: 13px
     .comments
         padding: 0 20px
     .comments__content-box1
         width: 100%
     .comments__content-box
         margin-bottom: 20px
+        gap: 10px
 
 .social-media
     border: 1px solid #706F6F

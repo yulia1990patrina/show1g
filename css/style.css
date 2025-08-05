@@ -62,7 +62,7 @@
 }
 @media (min-width: 320px) and (max-width: 640px) {
   .padding-top {
-    display: none;
+    padding-top: 10px;
   }
 }
 
@@ -225,6 +225,17 @@
   position: relative;
 }
 
+.history__slider .slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  border: 0.5px solid #c191f7;
+  border-radius: 50%;
+  background-color: #240E3F;
+}
+
 .card-romance {
   position: relative;
   width: 575px;
@@ -323,6 +334,7 @@
 }
 .all-history__tabs {
   margin-bottom: 60px;
+  padding: 0 20px;
 }
 .all-history__tab {
   text-transform: uppercase;
@@ -359,6 +371,8 @@
 
 .products__container {
   margin-bottom: 60px;
+  overflow: hidden;
+  max-height: calc(80em + 20px);
 }
 
 .tabs-content {
@@ -376,9 +390,20 @@
   margin: 0;
   width: 8px;
   height: 8px;
-  border: none;
+  border: 0.5px solid #c191f7;
   border-radius: 50%;
-  background-color: #6831B3;
+  background-color: #240E3F;
+}
+
+.slick-dots .slick-active button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #6831B3;
 }
 
 .all-history__tabs .slick-dots {
@@ -386,8 +411,8 @@
 }
 
 .card-history {
+  flex: 1 1 calc(25% - 20px);
   position: relative;
-  width: 22%;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -477,6 +502,17 @@
 }
 .characters-card > .slick-slide {
   width: auto;
+}
+
+.characters__slider .slick-dots button {
+  padding: 0;
+  font-size: 0;
+  margin: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #6831B3;
 }
 
 .spoilers {
@@ -573,6 +609,12 @@
   }
 }
 @media (min-width: 320px) and (max-width: 1450px) {
+  .card-romance__title {
+    font-size: 20px;
+  }
+  .card-history {
+    flex: 1 1 calc(33.33% - 20px);
+  }
   .romance-box {
     flex-direction: column;
   }
@@ -599,9 +641,12 @@
     font-size: 12px;
   }
 }
-@media (min-width: 320px) and (max-width: 1280px) {
-  .card-history {
-    width: 30%;
+@media (min-width: 320px) and (max-width: 1200px) {
+  .card-romance__title {
+    font-size: 15px;
+  }
+  .card-romance__views {
+    font-size: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 1090px) {
@@ -627,6 +672,9 @@
   }
 }
 @media (min-width: 320px) and (max-width: 890px) {
+  .card-history {
+    flex: 1 1 calc(50% - 20px);
+  }
   .history {
     margin-bottom: 100px;
   }
@@ -660,9 +708,6 @@
   .card__title {
     font-size: 20px;
   }
-  .card-history {
-    width: 48%;
-  }
 }
 @media (min-width: 320px) and (max-width: 600px) {
   .card__views-box > p {
@@ -674,8 +719,10 @@
   .romance-content__title1 {
     font-size: 30px;
   }
+}
+@media (min-width: 320px) and (max-width: 540px) {
   .card-history {
-    width: auto;
+    flex: 1 1 100%;
   }
 }
 .body-romance > .about-us {
@@ -2126,7 +2173,6 @@ body {
   margin-bottom: 90px;
 }
 .comments__content {
-  height: 205px;
   padding: 20px 20px 35px;
   border: 1px solid #706F6F;
   border-radius: 20px;
@@ -2142,7 +2188,6 @@ body {
 .comments__content-box1 > h4 {
   color: #FF624A;
   font-weight: 700;
-  line-height: 16px;
 }
 .comments__content-box1 > p {
   font-weight: 300;
@@ -2151,6 +2196,13 @@ body {
 .comments__content-text {
   font-size: 13px;
   font-weight: 200;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  max-height: 4.5em;
 }
 
 @media (min-width: 1081px) and (max-width: 1760px) {
@@ -2159,6 +2211,9 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 640px) {
+  .comments__content-box1 > h4 {
+    font-size: 13px;
+  }
   .comments {
     padding: 0 20px;
   }
@@ -2167,6 +2222,7 @@ body {
   }
   .comments__content-box {
     margin-bottom: 20px;
+    gap: 10px;
   }
 }
 .social-media {
