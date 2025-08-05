@@ -397,12 +397,11 @@ body
     width: 50%
 
 .news-game
-    margin-bottom: 160px
     &__box
         display: flex
         justify-content: space-between
         align-items: start
-        gap: 100px
+        gap: 50px
     &__box1
         display: flex
         flex-direction: column
@@ -414,6 +413,9 @@ body
         flex-direction: column
         align-items: center
         justify-content: center
+        padding-left: 50px
+        border-left: 1px solid #706F6F
+        padding-bottom: 160px
     &__content-1
         display: flex
         flex-direction: column
@@ -472,22 +474,23 @@ body
     .content-2
         display: none !important
 
-@media (min-width: 640px) and (max-width: 1460px)
-    .news-game
-        margin-bottom: 60px
 
 @media (min-width: 320px) and (max-width: 1080px)
     .news-game
-        margin-bottom: 0
+        margin-bottom: 100px
     .news-game__box
         flex-direction: column
-        margin-bottom: 60px
+        gap: 0
     .news-game__box2
         width: 100%
+        padding-left: 0
+        border: none
+        padding-bottom: 0
     .news-game__box2 > .social-media
         margin-bottom: 60px
     .news-game__box1
         width: 100%
+        margin-bottom: 100px
     .news-game__gaming
         display: flex
         flex-direction: column
@@ -562,7 +565,6 @@ body
         justify-content: center
         align-items: center
         gap: 20px
-        margin-bottom: 30px
         position: relative
 @media (min-width: 1081px) and (max-width: 1760px)
     .releases__title
@@ -575,8 +577,6 @@ body
         width: auto
         font-size: 12px
 @media (min-width: 320px) and (max-width: 1080px)
-    .releases
-        margin-bottom: 50px
     .releases__title
         justify-content: flex-start
 @media (min-width: 320px) and (max-width: 760px)
@@ -646,17 +646,16 @@ body
         display: flex
         justify-content: center
         gap: 30px
-        margin-bottom: 90px
 @media (min-width: 320px) and (max-width: 1080px)
     .passing__box
         gap: 30px
         justify-content: center
-        margin-bottom: 30px
 
 
 .comments
     margin-bottom: 90px
     &__content
+        height: 205px
         padding: 20px 20px 35px
         border: 1px solid #706F6F
         border-radius: 20px
@@ -669,6 +668,14 @@ body
     &__content-box1 > h4
         color: #FF624A
         font-weight: 700
+        font-weight: 200
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        overflow: hidden
+        text-overflow: ellipsis
+        line-height: 1.2em
+        max-height: 5em
     &__content-box1 > p
         font-weight: 300
         padding-bottom: 5px
@@ -685,9 +692,10 @@ body
 @media (min-width: 1081px) and (max-width: 1760px)
     .comments__content-box1
         width: 100%
-@media (min-width: 320px) and (max-width: 640px)
+@media (min-width: 320px) and (max-width: 1200px)
     .comments__content-box1 > h4
         font-size: 13px
+@media (min-width: 320px) and (max-width: 640px)
     .comments
         padding: 0 20px
     .comments__content-box1
@@ -766,9 +774,6 @@ body
         height: 26px
         font-weight: 700
         background-color: #FF624A
-@media (min-width: 540px) and (max-width: 1080px)
-    .discussed
-        margin-bottom: 100px
 
 .about-us
     margin-bottom: 135px
